@@ -1,0 +1,71 @@
+.title {
+    color: #ffffff;
+    font-family: "Noto Sans regular";
+    font-size: 25px;
+    left: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+}
+
+.title.inListCDA {
+    top: 255px;
+    width: 123px;
+}
+
+.title.inListGM {
+    top: 380px;
+    width: 70%;
+}
+
+
+
+.title.inListSite {
+    top: 120px;
+    width: 223px;
+}
+
+
+.dropdownList {
+    font-size: 10px;
+    text-align: center;
+    width: 250px;
+    font-size: 15px;
+    height: 35px;
+    margin-left: 20px;
+    color: #ffffff;
+}
+
+.dropdownList.Site {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 160px;
+}
+
+.dropdownList.CDA {
+    cursor: pointer;
+    margin-top: 100px;
+    transition: transform 0.3s ease;
+}
+
+
+.dropdownList.GM {
+    margin-left: 20px;
+    margin-top: 90px;
+}
+
+.elementsInDashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.dropdownList {
+    width: auto;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+

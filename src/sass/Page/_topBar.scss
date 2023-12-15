@@ -1,0 +1,131 @@
+.topbar {
+  display: inline-flex;
+  background-color: #1c1c1c;
+  padding: 10px;
+  width: calc(100% - 320px);
+  z-index: -100;
+}
+
+.pageList {
+  display: flex;
+  overflow-x: auto;
+  vertical-align: center;
+  height: auto;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.01);
+}
+
+.pageList::-webkit-scrollbar { 
+  height: 10px;
+}
+
+.pageList::-webkit-scrollbar-thumb {
+  background-color: #3a3a3af6;
+  border-radius: 15px;
+}
+
+.pageList::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.038);
+}
+
+.pageContainer {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+
+.pageContainer input {
+  border: 1px solid #ddd;
+  padding: 10px 10px;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 10px;
+  border: solid 3px #828282;
+  background-color: #ffffff;
+  color: #828282;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pageButton {
+  font-size: 18px;
+  background-color: #fff;
+  cursor: pointer;
+  width: auto;
+  height: 46px;
+  border-radius: 10px;
+  border: solid 3px #828282;
+  background-color: #3a3a3a;
+  color: #828282;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.pageButton:hover {
+  border: solid 3px #ffcc40;
+  color: #ffcc40;
+}
+
+.selected {
+  border: solid 3px #ffcc40;
+  background-color: #3a3a3a;
+  color: #ffcc40;
+}
+
+.deleteButton {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.deleteButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.addPage {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  vertical-align: center;
+  border-radius: 10px;
+  border: solid 3px #ffcc40;
+  width: 40px;
+  height: 40px;
+  background-color: #3a3a3a;
+  color: #ffcc40;
+  margin: 5px;
+  line-height: 36px;
+}
+
+.addPage h1 {
+  padding: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  width: 30px;
+  height: 30px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 200px;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
